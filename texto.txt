@@ -1,0 +1,29 @@
+Referências que usei para fazer o código e aprender mais sobre o algoritmo:
+https://www.datacamp.com/tutorial/a-star-algorithm
+https://github.com/jrialland/python-astar
+
+No simulador estava obtendo esse erro na hora de compilar:
+------------------------------------------------------------------------------------------
+pygame 2.6.1 (SDL 2.28.4, Python 3.13.3)
+
+Hello from the pygame community. https://www.pygame.org/contribute.html
+
+X Error of failed request:  BadLength (poly request too large or internal Xlib length error)
+
+  Major opcode of failed request:  255 ()
+
+  Minor opcode of failed request:  0
+
+  Serial number of failed request:  273
+
+  Current serial number in output stream:  273
+------------------------------------------------------------------------------------------
+
+Pesquisei sobre o erro e estava relacionada com uma parte do código no simulador.py em que o programa estava falhando
+na hora de transformar a imagem ícone que tem uma resolução de 1080x1080 para 40x40. Por conta disso, comentei as linhas
+que faziam esse papel, menos a variável caso ela seja usada em alguma outra parte do código. Depois disso, compilei e
+funcionou.
+
+Tive que criar um ambiente virtual que chamei de "edrom" para poder baixar o pygame e poder compilar o simulador sem problemas.
+
+Com relação ao código, fiz alguns comentários em cada parte para mostrar a lógica e o que foi feito, obrigado!
