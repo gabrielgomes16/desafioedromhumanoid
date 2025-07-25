@@ -80,10 +80,7 @@ def encontrar_caminho(pos_inicial, pos_objetivo, obstaculos, largura_grid, altur
     # (x, y): Posição atual do nó
     # caminho: Lista de nós que levaram até o nó atual
     open_set = []
-    
-    # came_from armazena o nó anterior no caminho mais curto descoberto até agora
-    # {current_node: previous_node}
-    came_from = {}
+
     
     # g_score_map armazena o custo real do início até cada nó
     # {node: g_score}
